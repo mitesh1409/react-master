@@ -57,10 +57,10 @@ React solves these problems using a concept called the **Virtual DOM**.
 This is the actual DOM tree that exists in the browser. It's how the browser renders the web page you see. Manipulating it is slow.
 
 * **Virtual DOM**:
-It is in-memory representation of all the application components.
+It is in-memory representation of all the application components.  
 It acts as a blueprint for the real DOM, meaning it is used by React
-to create Real DOM Tree to render the web page.
-Whenever there is a change in data or state of the application,
+to create Real DOM Tree to render the web page.  
+Whenever there is a change in data or state of the application,  
 React creates an updated Virtual DOM Tree and then it uses it to apply changes to the web page.
 
 The Virtual DOM is fundamental to how React works, and it's present from the very beginning.
