@@ -111,8 +111,7 @@ References:
 
 ## Explore
 
-- Real DOM vs Virtual DOM
-- How Virtual DOM works
+- [How Virtual DOM works?](dd-Virtual-DOM.md)
 - What are native apps?
 - React Router
 - Redux
