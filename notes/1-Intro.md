@@ -102,7 +102,7 @@ With your React knowledge, you can also build **native mobile applications** for
 
 ---
 
-References:
+## References
 
 - [https://react.dev/](https://react.dev/)
 - [https://reactnative.dev/](https://reactnative.dev/)
@@ -118,4 +118,4 @@ References:
 
 ---
 
-Next > Chapter #2 Installation and Setup
+Next > [Chapter #2 Installation and Setup](2-Installation-and-Setup.md)
