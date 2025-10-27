@@ -83,6 +83,10 @@ Following video provides a good introduction to the basic commands of npm, inclu
 
 ## References
 
+- [React > Installation](https://react.dev/learn/installation)
+- [React > Creating a React App](https://react.dev/learn/creating-a-react-app)
+- [React > Build a React app from Scratch](https://react.dev/learn/build-a-react-app-from-scratch)
+- [React > Add React to an Existing Project](https://react.dev/learn/add-react-to-an-existing-project)
 - [npm for absolute beginners](https://www.youtube.com/watch?v=UYz-9UaUp2E)
 
 ---
