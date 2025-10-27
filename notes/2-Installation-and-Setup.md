@@ -20,8 +20,6 @@ OR
 `npm create vite@latest`
 And then choose "react" template while creating an app with Vite as the build tool.
 
----
-
 ### #1.1 Breaking Down the Command `npm create vite@latest react-app -- --template react`
 
 * **`npm create`**: This is a command that acts as a wrapper for `npx` (Node Package Execute). It's used to run a package that creates something, in this case, a new project. It downloads and executes the latest version of the specified package.
