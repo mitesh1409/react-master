@@ -99,4 +99,4 @@ Following video provides a good introduction to the basic commands of npm, inclu
 
 ---
 
-Next > [Chapter #3 First React App](3-First-React-App.md)
+Next > [Chapter #3 Quick Start](3-Quick-Start.md)
