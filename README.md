@@ -1,2 +1,3 @@
-# react-master
-React notes, examples, interview questions etc.
+# React Master
+
+React notes, examples, challenges, interview questions etc.
