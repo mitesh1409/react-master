@@ -24,7 +24,7 @@ appending an h1 to our div#root (without using innerHTML).
 Don't use innerHTML to accomplish any of this.
 
 **Solution**  
-Following is React code and it is Declarative.
+Following is React code and it is "Declarative".
 
 ```jsx
 import { createRoot } from "react-dom/client"
@@ -35,7 +35,7 @@ root.render(
 )
 ```
 
-Following is JavaScript code and it is Imperative.
+Following is pure JavaScript code and it is "Imperative".
 
 index.html file:
 
