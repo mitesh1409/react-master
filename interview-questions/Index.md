@@ -9,5 +9,6 @@
 5. [What is the significance of the key prop in React lists?](./Q-5.md)
 6. [What are the ways we can pass data from a parent component to a child component in React?](./Q-6.md)
 7. [What is the purpose of `StrictMode` component in React?](./Q-7.md)
+8. [What is the core concept behind React's "reconcilliation" process?](./Q-8.md)
 
 git add . && git commit -m "🚀" && git push
