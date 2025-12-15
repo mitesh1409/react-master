@@ -11,5 +11,7 @@
 7. [What is the purpose of `StrictMode` component in React?](./Q-7.md)
 8. [What is the core concept behind React's "reconcilliation" process?](./Q-8.md)
 9. [How to manage component specific state in functional components?](./Q-9.md)
+10. [What is the benefit of integrating TypeScript with React projects?](./Q-10.md)
+11. [When does the `useEffect` hook with an empty dependency array `[]` run?](./Q-11.md)
 
 git add . && git commit -m "🚀" && git push
