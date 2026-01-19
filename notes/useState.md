@@ -1,5 +1,7 @@
 # `useState`
 
+[useState](https://react.dev/reference/react/useState)
+
 To manage component state.
 `useState` is a React Hook that lets you add a state variable to your component.
 
@@ -11,8 +13,6 @@ setState = state updater function
 initialState = value of the initial state  
 
 The convention is to name state variables like [something, setSomething] using array destructuring.
-
-[useState](https://react.dev/reference/react/useState)
 
 ```javascript
 import { useState } from 'react';
