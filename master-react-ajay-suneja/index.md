@@ -7,3 +7,4 @@
 3. [Module #1 - Setting Up Your Development Environment](./m1-dev-environment-setup.md)
 4. [Module #1 - Creating Your First React App](./m1-first-react-app.md)
 5. [Module #1 - Understanding the React Project Structure](./react-project-structure.md)
+6. [Module #1 - NPM vs NPX vs NVM Explained | Caret (^) & Tilde (~) Simplified](./npm-npx-nvm-caret-tilde.md)
