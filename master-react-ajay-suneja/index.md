@@ -20,3 +20,14 @@
 1. [JavaScript Code Execution & Global Execution Context](./m2-1.md)
 2. [Event Loop, Call Stack & Concurrency in JavaScript](./m2-2.md)
 3. [Hoisting Explained: Variables & Functions](./m2-3.md)
+4. [`var`, `let`, `const` Best Practices](./m2-4.md)
+5. [Arrow Functions vs Traditional Functions: A Deep Dive into the `this` Keyword](./m2-5.md)
+6. [Closure & Lexical Scope in JavaScript](./m2-6.md)
+7. [Classes, Objects, and Getters/Setters in JavaScript](./m2-7.md)
+
+---
+
+### Module #3: React Basics - Core Foundations
+
+1. [Setting Up a New React Project the Right Way](./m3-1.md)
+2. [Building Your First Reusable Component](./m3-2.md)
