@@ -32,6 +32,11 @@
 
 
 
+
+[Array: Must Know Methods](./26.md)
+[Apply, Call and Bind in JavaScript](./27.md)
+
+
 ---
 
 ### Module #3: React Basics - Core Foundations
