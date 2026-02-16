@@ -24,6 +24,13 @@
 5. [Arrow Functions vs Traditional Functions: A Deep Dive into the `this` Keyword](./m2-5.md)
 6. [Closure & Lexical Scope in JavaScript](./m2-6.md)
 7. [Classes, Objects, and Getters/Setters in JavaScript](./m2-7.md)
+8. [JavaScript Advanced OOP: Private Variables, Mixins & Inheritance](./m2-8.md)
+9. [Working with Objects in JavaScript](./m2-9.md)
+10. [Optional Chaining (`?.`), Nullish Coalescing (`??`), Logical OR (`||`)](./m2-10.md)
+11. [Destructuring in JavaScript (Object & Array)](./m2-11.md)
+12. [Shallow and Deep Copy in JavaScript](./m2-12.md)
+
+
 
 ---
 
