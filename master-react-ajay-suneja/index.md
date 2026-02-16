@@ -25,6 +25,11 @@
 6. [Closure & Lexical Scope in JavaScript](./m2-6.md)
 7. [Classes, Objects, and Getters/Setters in JavaScript](./m2-7.md)
 
+
+[Array: Must Know Methods](./26.md)
+[Apply, Call and Bind in JavaScript](./27.md)
+
+
 ---
 
 ### Module #3: React Basics - Core Foundations
