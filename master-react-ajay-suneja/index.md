@@ -45,3 +45,11 @@
 3. [JSX & Babel: How They Work Together?](./m3-3.md)
 4. [Naming Conventions: CamelCase, PascalCase & Kebab-Case Simplified](./m3-4.md)
 5. [React Fragments: Adding Elements Seamlessly](./m3-5.md)
+6. [Using JavaScript Expressions in JSX](./m3-6.md)
+7. [Setting Attributes Dynamically in JSX](./m3-7.md)
+8. [Handling Event in React](./m3-8.md)
+9. [Understanding State in React](./m3-9.md)
+10. [Introduction to React Hooks: The Functional Component Revolution](./m3-10.md)
+11. [Using useState Hook for State Management](./m3-11.md)
+12. [Handling User Input in Forms and Events](./m3-12.md)
+
