@@ -52,4 +52,7 @@
 10. [Introduction to React Hooks: The Functional Component Revolution](./m3-10.md)
 11. [Using useState Hook for State Management](./m3-11.md)
 12. [Handling User Input in Forms and Events](./m3-12.md)
+13. [Rendering List Dynamically using `map()` function](./m3-13.md)
+14. [Web DevTools](./m3-14.md)
+15. [Passing Data between Components using Props](./m3-15.md)
 
