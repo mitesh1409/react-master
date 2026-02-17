@@ -29,12 +29,11 @@
 10. [Optional Chaining (`?.`), Nullish Coalescing (`??`), Logical OR (`||`)](./m2-10.md)
 11. [Destructuring in JavaScript (Object & Array)](./m2-11.md)
 12. [Shallow and Deep Copy in JavaScript](./m2-12.md)
-
-
-
-
-[Array: Must Know Methods](./26.md)
-[Apply, Call and Bind in JavaScript](./27.md)
+13. [Array: Must Know Methods](./m2-13.md)
+14. [Apply, Call and Bind in JavaScript](./m2-14.md)
+15. [Spread and Rest in JavaScript](./m2-15.md)
+16. [Ternary Operator & Short-Circuiting](./m2-16.md)
+17. [Boolean Values in JavaScript](./m2-17.md)
 
 
 ---
@@ -43,3 +42,6 @@
 
 1. [Setting Up a New React Project the Right Way](./m3-1.md)
 2. [Building Your First Reusable Component](./m3-2.md)
+3. [JSX & Babel: How They Work Together?](./m3-3.md)
+4. [Naming Conventions: CamelCase, PascalCase & Kebab-Case Simplified](./m3-4.md)
+5. [React Fragments: Adding Elements Seamlessly](./m3-5.md)
