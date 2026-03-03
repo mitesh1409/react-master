@@ -56,3 +56,13 @@
 14. [Web DevTools](./m3-14.md)
 15. [Passing Data between Components using Props](./m3-15.md)
 
+---
+
+### Module #4: Hands-on Projects - Learn by Building
+
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+https://developer.mozilla.org/en-US/curriculum/core/semantic-html/
+
+
