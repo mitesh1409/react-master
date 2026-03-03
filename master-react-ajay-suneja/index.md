@@ -34,6 +34,8 @@
 15. [Spread and Rest in JavaScript](./m2-15.md)
 16. [Ternary Operator & Short-Circuiting](./m2-16.md)
 17. [Boolean Values in JavaScript](./m2-17.md)
+18. [Prototype & Inheritence in JS](./m2-18.md)
+19. [Set and Map in JavaScript](./m2-19.md)
 
 
 ---
