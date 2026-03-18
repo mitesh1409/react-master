@@ -9,8 +9,7 @@
     padding: 20px 8%;
 }
 
-.task_column {
-    width: 30%;
-    background-color: #c0c0c0;
-    margin: 20px;
+.app_header {
+    text-align: center;
+    padding: 15px;
 }
