@@ -1,0 +1,51 @@
+.task_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.task_form > form {
+    width: 60%;
+}
+
+.task_form_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_status {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 260px;
+}
+
+.task_submit {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0px 15px;
+}
+
+.task_input {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 15px 0px;
+    width: 100%;
+}
