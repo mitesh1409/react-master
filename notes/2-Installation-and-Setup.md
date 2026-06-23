@@ -5,6 +5,7 @@ Topics
 1. Create React Application
 2. `npm create` vs. `npm install`
 3. The Role of `npx`
+4. Setup React Project using Docker
 
 ---
 
@@ -78,6 +79,99 @@ This approach ensures that each project has its own isolated and specific versio
 Following video provides a good introduction to the basic commands of npm, including `npm run` and the difference between `npm` and `npx`.
 
 [npm for absolute beginners](https://www.youtube.com/watch?v=UYz-9UaUp2E)
+
+---
+
+## #4 Setup React Project using Docker
+
+High level steps to setup project using Docker are as follows:
+
+Step #1  
+Setup Project Files  
+* Existing project then do git clone of a repo
+* From scratch using npm create etc.
+For this we may use a temporary Docker container.
+
+Step #2  
+Setup Docker Files - Dockerfile & .dockerignore
+
+Step #3  
+Build Image & Run Container
+
+Step #1  
+Creating a brand new React application.  
+Run the following command:  
+`docker run --rm -v ${PWD}/hello-react-app:/app -w /app node:24-alpine npm create vite@latest . -- --template react`
+
+This will create "hello-react-app" inside your present working directory.
+
+**Breakdown of the command in Step #1**
+
+`docker run --rm -v ${PWD}/hello-react-app:/app -w /app node:24-alpine npm create vite@latest . -- --template react`
+`docker run --rm -v ${PWD}/tic-tac-toe:/app -w /app node:24-alpine npm create vite@latest . -- --template react`
+
+There are mainly two parts of this command:  
+
+1. The Docker Configuration - how the container behaves  
+  `docker run --rm -v ${PWD}/hello-react-app:/app -w /app node:24-alpine`
+2. The Node/Vite Command - what runs inside it  
+  `npm create vite@latest . -- --template react`
+
+---
+
+### Part 1: The Docker Flags (The Environment)
+
+This half tells Docker Desktop on Windows how to set up the temporary virtual environment.
+
+* **`docker run`**
+This tells Docker to create and start a brand-new container.
+
+* **`--rm`**
+Short for "remove". This tells Docker to automatically delete the container the exact moment it finishes running the command. This ensures no leftover, stopped container images clutter your Windows 11 machine.
+
+* **`-v ${PWD}/hello-react-app:/app`**
+This is the **Volume Mount** (the link between systems).
+
+* `${PWD}` stands for *Present Working Directory* (your `projects` folder on Windows).
+
+* It tells Docker: *"Create a folder called `hello-react-app` on my Windows machine, and link it directly to the `/app` folder inside the Linux container."* * Anything Vite creates inside the container's `/app` folder will instantly appear on your Windows hard drive.
+
+* **`-w /app`**
+Short for **Working Directory**. It tells Docker to place you directly inside the `/app` folder *inside* the container before executing any commands (similar to running `cd /app`).
+
+* **`node:24-alpine`**
+This is the **Docker Image** used as the foundation. It tells Docker to pull the official Node.js version 24 environment built on "Alpine Linux" (a highly lightweight, secure, and fast version of Linux).
+
+---
+
+### Part 2: The Vite Command (The Execution)
+
+This half is the actual command passed directly to the Node.js environment inside the container.
+
+* **`npm create vite@latest`**
+This downloads and executes the latest version of the Vite project creation tool.
+
+* **`.` (The Dot)**
+This tells Vite *where* to install the files. Because `-w /app` put us inside the `/app` folder, the dot means: *"Install the React project files right here in this folder, do not create another subfolder."*
+
+* **`--`**
+This double-dash is an npm-specific operator. It tells npm: *"Stop looking at flags for yourself; pass any flags that follow directly to Vite."*
+
+* **`--template react`**
+This is the configuration flag passed to Vite telling it to skip the interactive menu and scaffold a standard JavaScript **React** application.
+
+---
+
+### Summary of the Lifecycle
+
+When you hit Enter in your Windows terminal, this is the exact sequence that occurs:
+
+1. Docker looks at your `projects` folder and safely provisions a new, empty `hello-react-app` folder on Windows.
+2. Docker fires up a temporary Linux container running Node 24.
+3. It bridges the Windows `hello-react-app` folder with the container's `/app` folder.
+4. Inside that container, Vite runs, sees the dot `.`, and dumps the React starter code into `/app`.
+5. Because of the bridge, those files instantly manifest on your Windows machine.
+6. Vite finishes its job, the command ends, and `--rm` instantly deletes the container, leaving your local Windows environment completely clean—holding nothing but your brand-new React project files.
 
 ---
 
