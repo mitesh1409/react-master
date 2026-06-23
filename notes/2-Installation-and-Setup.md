@@ -98,7 +98,11 @@ Setup Docker Files - Dockerfile & .dockerignore
 Step #3  
 Build Image & Run Container
 
-Step #1  
+---
+
+Lets dive deep into each of the setup steps above.
+
+### Step #1  
 Creating a brand new React application.  
 Run the following command:  
 `docker run --rm -v ${PWD}/hello-react-app:/app -w /app node:24-alpine npm create vite@latest . -- --template react`
@@ -119,7 +123,7 @@ There are mainly two parts of this command:
 
 ---
 
-### Part 1: The Docker Flags (The Environment)
+#### Part 1: The Docker Flags (The Environment)
 
 This half tells Docker Desktop on Windows how to set up the temporary virtual environment.
 
@@ -144,7 +148,7 @@ This is the **Docker Image** used as the foundation. It tells Docker to pull the
 
 ---
 
-### Part 2: The Vite Command (The Execution)
+#### Part 2: The Vite Command (The Execution)
 
 This half is the actual command passed directly to the Node.js environment inside the container.
 
@@ -162,7 +166,7 @@ This is the configuration flag passed to Vite telling it to skip the interactive
 
 ---
 
-### Summary of the Lifecycle
+#### Summary of the Lifecycle
 
 When you hit Enter in your Windows terminal, this is the exact sequence that occurs:
 
@@ -172,6 +176,44 @@ When you hit Enter in your Windows terminal, this is the exact sequence that occ
 4. Inside that container, Vite runs, sees the dot `.`, and dumps the React starter code into `/app`.
 5. Because of the bridge, those files instantly manifest on your Windows machine.
 6. Vite finishes its job, the command ends, and `--rm` instantly deletes the container, leaving your local Windows environment completely clean—holding nothing but your brand-new React project files.
+
+---
+
+### Step #2
+Setup Docker Files - Dockerfile & .dockerignore
+
+`Dockerfile`  
+
+```Dockerfile
+# Step 1: Use the latest Node 24 Alpine image
+FROM node:24-alpine
+
+# Step 2: Set the working directory
+WORKDIR /app
+
+# Step 3: Copy package files
+COPY package*.json ./
+
+# Step 4: Install dependencies
+RUN npm install
+
+# Step 5: Copy the rest of the application code
+COPY . .
+
+# Step 6: Expose Vite's default port
+EXPOSE 5173
+
+# Step 7: Run Vite dev server, exposing it to the network
+CMD ["npm", "run", "dev", "--", "--host"]
+```
+
+`.dockerignore`  
+
+```.dockerignore
+node_modules
+dist
+.git
+```
 
 ---
 
