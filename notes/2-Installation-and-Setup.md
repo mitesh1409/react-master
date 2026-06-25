@@ -217,6 +217,20 @@ dist
 
 ---
 
+### Step #3
+
+Build your image:  
+
+`docker build -t my-vite-react-app .`
+
+And fire up your persistent container with volume mounting for local editing:  
+
+`docker run -d -p 5173:5173 -v ${PWD}:/app -v /app/node_modules --name vite-container my-vite-react-app`
+
+docker run -d -p 5173:5173 -v ${PWD}:/app -v /app/node_modules --name react-tic-tac-toe-container react-tic-tac-toe
+
+---
+
 ## References
 
 - [React > Installation](https://react.dev/learn/installation)
