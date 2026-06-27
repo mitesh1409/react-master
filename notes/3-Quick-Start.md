@@ -22,5 +22,3 @@ Topics
 - [React > Quick Start](https://react.dev/learn)
 - [Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
 - [Thinking in React](https://react.dev/learn/thinking-in-react)
-
----
